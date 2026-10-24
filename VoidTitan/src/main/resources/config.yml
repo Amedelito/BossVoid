@@ -1,0 +1,34 @@
+# Versión: Paper 1.21.1 (usa custom_model_data).
+# Debe coincidir con el resource pack (VoidTitan-Pack.zip).
+models:
+  boss_body: 7101
+  boss_head: 7102
+  boss_limb: 7103
+  titan_egg: 7104
+  propulsor: 7105
+  slot_coin: 7106      # si tu tragaperras ya tiene moneda, pon aqui SU numero
+
+# Si el modelo del jefe se ve mirando hacia atras, cambia 0 por 180.
+model-yaw-offset: 0
+
+boss:
+  name: "<gradient:#7b2ff7:#f107a3>Titán del Vacío</gradient>"
+  health: 1500
+  scale: 2.5
+  damage: 12
+  speed: 0.27
+  xp: 3000
+  bar-range: 70
+
+drops:
+  propulsor-chance: 100
+  coins-min: 40
+  coins-max: 90
+  # Compatibilidad con tu plugin de tragaperras (tag PDC "namespace:clave" y valor string). Vacío = ninguno.
+  coin-pdc-key: ""
+  coin-pdc-value: ""
+
+propulsor:
+  cooldown-ticks: 25
+  dash-power: 2.2
+  jump-power: 1.5
